@@ -89,7 +89,7 @@ public struct SoraPipeline {
     }
   }
 
-  func sample(prompt: String, logdir: URL, seed: Int, step: Int, mergeStep: Int,numLpltarget: Int, isLPL: Bool, isTDTM: Bool, isCI: Bool, isDL: Bool) {
+  func sample(prompt: String, logdir: URL, seed: Int, step: Int, mergeStep: Int,numLpltarget: Int, isBase: Bool, isLPL: Bool, isTDTM: Bool, isCI: Bool, isDL: Bool) {
     // To do: make the sample process
     
     Task(priority: .high) {
@@ -113,9 +113,9 @@ public struct SoraPipeline {
           // =========== STDiT ===========
           let additionalArgs: [String: MLTensor] = [:]
           let vaeOutChannels = 4
-          let latentsize = (20, 32, 32)
-          let height = 256.0
-          let width = 256.0
+          let latentsize = (20, isBase ? 32 : 24, isBase ? 32 : 24)
+          let width = isBase ? 256.0 : 192.0
+          let height = isBase ? 256.0 : 192.0
           let fps = 24.0
           let resolution = width * height
           let z = await MLTensor(randomNormal: [1, vaeOutChannels, latentsize.0, latentsize.1, latentsize.2],seed: UInt64(seed), scalarType: Float32.self).shapedArray(of: Float32.self)

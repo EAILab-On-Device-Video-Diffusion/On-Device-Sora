@@ -44,14 +44,15 @@ public struct STDiT {
       group.enter()
       computeQueue.async { [self] in
         do {
-          try spatialAndTemporal.loadResources()
           if i==0 && step==0 && isDL {
             memoryInfo.remainMemory = os_proc_available_memory()
           }
+          try spatialAndTemporal.loadResources()
+
           if i==0 && step == mergeStep && isDL {
             memoryInfo.remainMemory = os_proc_available_memory()
           }
-          memoryInfo.loadMemory = 170*1024*1024
+          memoryInfo.loadMemory = 170*1000*1000
           let spatialOutput = try spatialAndTemporal.loadedModel?.prediction(from: inputFeatures)
           if i==0 && step==0 && isDL {
             memoryInfo.needMemory = Int(getMemoryUsedAndDeviceTotalInMegabytes())
@@ -59,10 +60,9 @@ public struct STDiT {
           if i==0 && step == mergeStep && isDL {
             memoryInfo.needMemory = Int(getMemoryUsedAndDeviceTotalInMegabytes())
           }
-          if memoryInfo.remainMemory - memoryInfo.loadMemory > memoryInfo.needMemory + memoryInfo.loadMemory && isDL {
+          if memoryInfo.remainMemory - memoryInfo.loadMemory > memoryInfo.needMemory + memoryInfo.loadMemory * 2  && isDL {
             memoryInfo.remainMemory -= memoryInfo.loadMemory
             memoryInfo.countOfUnload += 1
-            print(memoryInfo.countOfUnload)
           } else {
             if i >= memoryInfo.countOfUnload || step == numSamplingsteps - 1 || step == numLpltarget {
               spatialAndTemporal.unloadResources()
@@ -141,18 +141,19 @@ public struct STDiT {
       
       computeQueue.async {
         do {
-          try spatialAndTemporal.loadResources()
           if i==0 && step==0 && isDL {
             memoryInfo.remainMemory = os_proc_available_memory()
           }
-          memoryInfo.loadMemory = 170*1024*1024
+          try spatialAndTemporal.loadResources()
+          memoryInfo.loadMemory = 170*1000*1000
           let spatialOutput = try spatialAndTemporal.loadedModel?.prediction(from: inputFeatures)
           if i==0 && step==0 && isDL {
             memoryInfo.needMemory = Int(getMemoryUsedAndDeviceTotalInMegabytes())
           }
-          if memoryInfo.remainMemory - memoryInfo.loadMemory > memoryInfo.needMemory + memoryInfo.loadMemory && isDL {
+          if memoryInfo.remainMemory - memoryInfo.loadMemory > memoryInfo.needMemory + memoryInfo.loadMemory * 2 && isDL {
             memoryInfo.remainMemory -= memoryInfo.loadMemory
             memoryInfo.countOfUnload += 1
+
           } else {
             if i >= memoryInfo.countOfUnload || step == mergeStep - 1 || step == numLpltarget {
               spatialAndTemporal.unloadResources()
