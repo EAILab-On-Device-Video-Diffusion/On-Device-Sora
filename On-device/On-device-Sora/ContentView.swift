@@ -162,9 +162,9 @@ struct ContentView: View {
           
           if isGenerating {
             if let videoURL = tensor2vidConverter.videoURL {
-                VideoPlayerView(url: videoURL)
+                VideoPlayerView(url: videoURL).listRowSeparator(.hidden).frame(maxWidth: .infinity, alignment: .center)
             } else {
-              ProgressView().padding().listRowSeparator(.hidden)
+              ProgressView().padding().listRowSeparator(.hidden).frame(maxWidth: .infinity, alignment: .center)
             }
           }
           
