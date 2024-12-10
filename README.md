@@ -33,7 +33,7 @@ Instruction to Team 2: 각 부분에 대한 소개를 부탁드립니다.
 
 ### Download converted MLPackage
 
-You can download and use the converted models from the following link. [ [Download](https://drive.google.com/drive/folders/1L6pVi3KmyLygR_pvKofRL-21adKsEb4p?usp=sharing)]
+You can download and use the converted models from the following link. [[Download](https://drive.google.com/drive/folders/1L6pVi3KmyLygR_pvKofRL-21adKsEb4p?usp=sharing)]
 
 
 ## How to Use
