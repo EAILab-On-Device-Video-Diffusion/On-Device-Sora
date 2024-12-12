@@ -67,14 +67,18 @@ python3 export-vae-temporal.py
 python3 export-vae-spatial.py
 ```
 
+## How to Use
 
+### Required
+
+1. iPhonne: over iPhone 15 pro
+2. iOS version: over 18
+3. All mlpackages (T5, STDiT, VAE)
 
 ### Download converted MLPackage
 
 You can download and use the converted models from the following link. [[Download](https://drive.google.com/drive/folders/1L6pVi3KmyLygR_pvKofRL-21adKsEb4p?usp=sharing)]
 
-
-## How to Use
 
 
 ### Example artifacts
