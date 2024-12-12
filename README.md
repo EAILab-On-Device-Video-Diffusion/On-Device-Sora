@@ -70,10 +70,9 @@ python3 export-vae-spatial.py
 ## How to Use
 
 ### Required
-
-1. iPhonne: over iPhone 15 pro
-2. iOS version: over 18
-3. All mlpackages (T5, STDiT, VAE)
+* iPhonne: over iPhone 15 pro
+* iOS version: over 18
+* All mlpackages (T5, STDiT, VAE)
 
 ### Download converted MLPackage
 
