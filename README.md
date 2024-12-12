@@ -83,6 +83,7 @@ You can download and use the converted models from the following link. [[Downloa
 * Change the Team (None -> Your Apple account) in TARGETS/Signing&Capabilities
 * Launch the app
 ### Example artifacts
+![On-device-Sora-Example1](./Figures/On-device-Sora-Example1.gif)
 
 ### Figures
 
