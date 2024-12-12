@@ -169,7 +169,7 @@ struct ContentView: View {
           }
           
           Button(action: generate) {
-            Text("Start Video Generate").font(.title)
+            Text("Start Video Generation").font(.title)
           }.buttonStyle(.borderedProminent).listRowSeparator(.hidden).frame(maxWidth: .infinity, alignment: .center)
         }
         .listStyle(.plain)
@@ -182,7 +182,7 @@ struct ContentView: View {
       do {
         isGenerating = true
         let soraPipeline = try SoraPipeline(resourcesAt: Bundle.main.bundleURL, videoConverter: tensor2vidConverter)
-        print("Start Video Generate")
+        print("Start Video Generation")
         let aesprompt = prompt.appending(" aesthetic score: \(aestheticScore).")
         let logdir = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]
         soraPipeline.sample(prompt: aesprompt, logdir: logdir, seed: Int(seed) ?? 42, step: step, mergeStep: mergeStep, numLpltarget: numLpltarget, isBase:isBase, isLPL: isLPL, isTDTM: isTDTM, isCI: isCI, isDL: isDL)
