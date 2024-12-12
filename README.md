@@ -1,4 +1,3 @@
-# On-Device-Sora
 # [Mobisys 2025] On-device Sora: Enabling Diffusion-Based Text-to-Video Generation for Mobile Devices
 
 The paper is currently under review.
@@ -12,7 +11,6 @@ Open-Sora : Democratizing Efficient Video Production for All
 
 This repository provides code for *On-device Sora*, which is an open-sourced implementation of paper named *On-device Sora: Enabling Diffusion-Based Text-to-Video Generation for Mobile Devices*. 
 
-Instruction to Team 2: 각 부분에 대한 소개를 부탁드립니다.  
 
 ### On-Device Sora
 *On-device Sora* applies Linear Proportional Leap (LPL), Temporal Dimension Token Merging (TDTM), and Concurrent Inference with Dynamic Loading (CI-DL) to enable efficient video generation on the iPhone 15 Pro.
