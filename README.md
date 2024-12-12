@@ -21,7 +21,7 @@ This repository provides code for *On-device Sora*, which is an open-sourced imp
 
 [Open-Sora](https://github.com/hpcaitech/Open-Sora) is a baseline model of On-Device Sora, an open-source project for video generation, and a T2V Diffusion model that can produce videos based on text input.
 
-## How to convert each model to mlpackage for On-device Sora
+## How to convert each model to MLPackage for On-device Sora
 
 ## Package Dependencies
 
@@ -72,9 +72,9 @@ python3 export-vae-spatial.py
 * Apple Account to build and launch the app
 * iPhonne: over iPhone 15 pro
 * iOS version: over 18
-* All mlpackages (T5, STDiT, VAE)
+* All MLPackage (T5, STDiT, VAE)
 
-### Download converted MLPackage (if you don't want to convert each model to mlpackages)
+### Download converted MLPackage (if you don't want to convert each model to MLPackage)
 
 You can download and use the converted models from the following link. [[Download](https://drive.google.com/drive/folders/1L6pVi3KmyLygR_pvKofRL-21adKsEb4p?usp=sharing)]
 
