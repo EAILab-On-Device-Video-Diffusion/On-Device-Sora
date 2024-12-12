@@ -70,16 +70,18 @@ python3 export-vae-spatial.py
 ## How to Use
 
 ### Required
+* Mac device for xcode
 * iPhonne: over iPhone 15 pro
 * iOS version: over 18
 * All mlpackages (T5, STDiT, VAE)
 
-### Download converted MLPackage
+### Download converted MLPackage (if you don't want to convert each model to mlpackages)
 
 You can download and use the converted models from the following link. [[Download](https://drive.google.com/drive/folders/1L6pVi3KmyLygR_pvKofRL-21adKsEb4p?usp=sharing)]
 
-
-
+### Run the app
+* implement xcode project by clicking On-device/On-device-Sora.xcodeproj
+* launch the app
 ### Example artifacts
 
 ### Figures
