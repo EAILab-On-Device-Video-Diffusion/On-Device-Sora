@@ -85,8 +85,3 @@ You can download and use the converted models from the following link. [[Downloa
 * Launch the app
 ### Example artifacts
 ![On-device-Sora-Example1](./Figures/On-device-Sora-Example1.gif)
-
-### Figures
-
-
-
