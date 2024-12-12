@@ -27,7 +27,7 @@ This repository provides code for *On-device Sora*, which is an open-sourced imp
 
 ### Dependency 
 ```
-cd convert-On-device
+cd Device_conversion
 
 conda create -n convert python=3.10
 
