@@ -20,6 +20,7 @@ model = dict(
     enable_flash_attn=False,
     enable_layernorm_kernel=False,
     force_huggingface=True,
+    merge_steps=0
 )
 vae = dict(
     type="OpenSoraVAE_V1_2",
@@ -47,3 +48,6 @@ flow = None
 # for ios debug
 flag = False
 phone_output = False
+
+# lpl_settings
+lpl_setting = 2
