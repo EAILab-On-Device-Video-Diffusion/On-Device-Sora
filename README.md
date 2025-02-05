@@ -5,7 +5,7 @@ The paper is currently under review.
 
 Code implementation of  [MobiSys 2025] On-device Sora: Enabling Diffusion-Based Text-to-Video Generation for Mobile Devices.
 Base code referred ->
-Open-Sora : Democratizing Efficient Video Production for All
+Open-Sora : Democratizing Efficient Video Production for All 
 
 ## Introduction
 
