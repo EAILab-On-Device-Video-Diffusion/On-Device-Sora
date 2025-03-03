@@ -9,7 +9,7 @@ Open-Sora : Democratizing Efficient Video Production for All
 
 ## Introduction
 
-This repository provides code for *On-device Sora*, which is an open-sourced implementation of paper named *On-device Sora: Enabling Diffusion-Based Text-to-Video Generation for Mobile Devices*. 
+This repository provides code for *On-device Sora*, which is an open-sourced implementation of paper named *On-device Sora: Enabling Training-Free Diffusion-based Text-to-Video Generation for Mobile Devices*. 
 
 
 ### On-Device Sora
